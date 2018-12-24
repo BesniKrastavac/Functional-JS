@@ -1,0 +1,1 @@
+module.exports = (operation, num) => (num > 0) ? (operation() && repeat(operation, --num)) : false

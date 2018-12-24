@@ -1,0 +1,1 @@
+module.exports = (arr, fn, initial) => (arr.length > 0) ? initial = fn(initial, arr[0]) && module.exports(arr.slice(1), fn, initial) : initial

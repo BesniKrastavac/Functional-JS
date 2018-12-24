@@ -1,0 +1,1 @@
+module.exports = (...arguments) => Array.prototype.slice.call(arguments).reduce((acc, curr) => (Object.prototype.hasOwnProperty.call(curr, 'quack')) ? ++acc : acc, 0)

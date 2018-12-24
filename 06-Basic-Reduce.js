@@ -1,0 +1,1 @@
+module.exports = inputWords => inputWords.reduce((acc, current) => (acc[current] ? (acc[current]++) : (acc[current] = 1)) && acc, {})
