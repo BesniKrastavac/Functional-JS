@@ -1,1 +1,1 @@
-module.exports = (arr, fn) => arr.reduce((acc, curr) => acc.push(fn(curr)) && acc, [])
+module.exports = (arr, fn) => arr.reduce((acc, curr) => [...acc, fn(curr)], [])
